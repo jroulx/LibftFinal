@@ -1,0 +1,9 @@
+
+rme: ./libft.h
+Error: global scope bad aligned
+Error (line 20): Struct s_list bad aligned
+Error (line 20): s_list and t_list not aligned.
+Error (line 20): must have only tabulations between struct and s_list.
+Error (line 20, col 14): bad spacing
+Error (line 24): struct and s_list not separated by a single space.
+Error (line 25, col 1): bad spacing
