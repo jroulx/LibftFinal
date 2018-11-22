@@ -68,16 +68,19 @@ so :
 	$(CC) -Wall -fPIC -c $(SRC)
 	$(CC) -shared -o libft.so $(OBJ)
 
+maintest :
+	$(CC) -I. $(SRC) main.c 
+
 $(NAME) : 
 	$(CC) -c $(FLAGS) $(SRC) 
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 clean :
-	rm -rf $(CHECKO) $(OBJ) 
+	rm -rf $(OBJ) 
 
 fclean : clean
-	rm -rf $(EXENAME)
+	rm -rf $(NAME)
 
 clearlib : 
 	rm -rf $(NAME)

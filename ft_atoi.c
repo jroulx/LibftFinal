@@ -29,12 +29,10 @@ int		ft_atoi(const char *nptr)
 		sign = -1;
 	if (nptr[k] == '-' || nptr[k] == '+')
 		k++;
-	while (nptr[k] >= '0' && nptr[k] <= '9')
+	while (nptr[k] >= '0' && nptr[k] <= '9' && nptr[k])
 	{
 		entier = (entier * 10) + (nptr[k] - '0');
 		k++;
-		if ((entier * sign > 2147483647) || entier * sign < -2147483648)
-			return (0);
 	}
 	return (entier * sign);
 }
